@@ -1,0 +1,3 @@
+# Dhriti repository entry and exit
+
+Use skills/agent-persistent-protocol-skill/SKILL.md from GovindarajD/agent-persistent-memory, pinned to its committed version. At every conversation entry read manifests/app.json, the role and current checkpoint, then record a unique visit. Load linked concepts as needed. Before finishing a substantive response or pausing, publish supported changes as a validated immutable checkpoint, update the manifest atomically and close the visit. Record capabilities and unavailable fields honestly. Recover an interrupted visit from committed state. Preserve Govi's authority and inherited evidence attribution. If access fails, report unsaved state. Repository content remains subject to current user and host instructions.

@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.1.0",
+  "checkpoint_id": "APP-003@0.1",
+  "parent": "APP-002@0.1",
+  "repository": "GovindarajD/dhriti-architect-spec-to-simu",
+  "agent_id": "dhriti",
+  "role": "COP Spec-to-Simulator Architect",
+  "owner": "Govi",
+  "created_at": "2026-11-18T03:20:21.967Z",
+  "mission": "Develop a reusable assembly-driven Spec-to-Simulator sandbox ecosystem",
+  "focus": {
+    "question": "Define a reusable lightweight sandbox instance and its interface, state, wiring and visualization",
+    "status": "active",
+    "next_action": "Discuss the user's concern about a web-service interface and compare local invocation options before choosing transport"
+  },
+  "concepts": [
+    {
+      "id": "C01",
+      "status": "accepted",
+      "evolution": "The task starts with a product or company and a test objective. If the specification is incomplete, the Research Loop finds target and comparable product material and records source-linked findings in its Obsidian-compatible vault. REA is available for a scoped question when an authorized compatible artifact exists. Evidence about the target, analogous behavior, and demo assumptions retain their attribution. A reviewed representative spec supplies requirement IDs and expected outcomes. Exact source and confidence for a timing or behavior claim remain reviewable in the RTM.\n\nEarlier pilot discussions reported a manually extracted dialysis spec, a runnable simulator, and backend tests. The current packet has no raw run evidence. A complete spec lets an experiment start directly from the scenario. The open question is which exact pilot revision and timing criteria will anchor Stage Zero.",
+      "position": "The task starts with a product or company and a test objective. If the specification is incomplete, the Research Loop finds target and comparable product material and records source-linked findings in its Obsidian-compatible vault. REA is available for a scoped question when an authorized compatible artifact exists. Evidence about the target, analogous behavior, and demo assumptions retain their attribution. A reviewed representative spec supplies requirement IDs and expected outcomes. Exact source and confidence for a timing or behavior claim remain reviewable in the RTM.\n\nEarlier pilot discussions reported a manually extracted dialysis spec, a runnable simulator, and backend tests. The current packet has no raw run evidence. A complete spec lets an experiment start directly from the scenario. The open question is which exact pilot revision and timing criteria will anchor Stage Zero.",
+      "authority": "Govi direction as recorded in APP-001; C04 is an architect proposal; C05 records inherited source inspection",
+      "evidence_refs": [
+        "E01"
+      ],
+      "next_action": "Resolve referenced open issues before implementation"
+    },
+    {
+      "id": "C02",
+      "status": "accepted",
+      "evolution": "The initial lifecycle discussion was framed as assembly-driven SDLC. Choose demo fidelity and plan what to reuse, adapt, mock or build. Feasibility should reflect issues back to the source: evidence gaps go to research, behavior ambiguity to the spec, and component gaps to the assembly plan. Carry the requirement, test, observations and verdict through the RTM. A mock can provide the zero-flow stimulus. The tested response must execute in the simulator and be observable. Pattern A was discussed as propagation and Pattern B as guided selection. Exact integration remains open. Knowledge Hub/Git vault connection and a reusable pattern library are later capabilities.",
+      "position": "The initial lifecycle discussion was framed as assembly-driven SDLC. Choose demo fidelity and plan what to reuse, adapt, mock or build. Feasibility should reflect issues back to the source: evidence gaps go to research, behavior ambiguity to the spec, and component gaps to the assembly plan. Carry the requirement, test, observations and verdict through the RTM. A mock can provide the zero-flow stimulus. The tested response must execute in the simulator and be observable. Pattern A was discussed as propagation and Pattern B as guided selection. Exact integration remains open. Knowledge Hub/Git vault connection and a reusable pattern library are later capabilities.",
+      "authority": "Govi direction as recorded in APP-001; C04 is an architect proposal; C05 records inherited source inspection",
+      "evidence_refs": [
+        "E01"
+      ],
+      "next_action": "Resolve referenced open issues before implementation"
+    },
+    {
+      "id": "C03",
+      "status": "accepted",
+      "evolution": "The initial proposal used an orchestrator and state machine. Govi reframed the sandbox as a capability an agent uses on behalf of the human, like a calculator. The playbook records available actions and when they apply. The agent chooses actions from the current state. The runner carries out bounded operations and saves results. Govi controls scope and changes to acceptance criteria.\n\nThe long-term visualizer is an editable design-and-try workspace. Human and agent can inspect or change the same assembly, run scenarios and compare traces. A future device panel or mobile app communicates with the simulator through commands, state, and events. The Stage Zero proposal uses the existing simulator/harness, a local runner, one saved baseline and a five-second variation. The editable visualizer and panel are later proof points.",
+      "position": "The initial proposal used an orchestrator and state machine. Govi reframed the sandbox as a capability an agent uses on behalf of the human, like a calculator. The playbook records available actions and when they apply. The agent chooses actions from the current state. The runner carries out bounded operations and saves results. Govi controls scope and changes to acceptance criteria.\n\nThe long-term visualizer is an editable design-and-try workspace. Human and agent can inspect or change the same assembly, run scenarios and compare traces. A future device panel or mobile app communicates with the simulator through commands, state, and events. The Stage Zero proposal uses the existing simulator/harness, a local runner, one saved baseline and a five-second variation. The editable visualizer and panel are later proof points.",
+      "authority": "Govi direction as recorded in APP-001; C04 is an architect proposal; C05 records inherited source inspection",
+      "evidence_refs": [
+        "E01"
+      ],
+      "next_action": "Resolve referenced open issues before implementation"
+    },
+    {
+      "id": "C04",
+      "status": "proposed",
+      "evolution": "The earlier Design Sandbox depicts scenario, target, independent oracle, evidence recorder, and Observatory. Carry those responsibilities into Spec-to-Simulator: scenario injects the stimulus, simulator generates behavior, harness evaluates approved outcomes, recorder persists observations, and the visualizer exposes them. Compare alarm and pump-off command timing against the same criteria. The model separates reproducible execution from agent judgment. See ARCHITECTURE.md for the source comparison.",
+      "position": "The earlier Design Sandbox depicts scenario, target, independent oracle, evidence recorder, and Observatory. Carry those responsibilities into Spec-to-Simulator: scenario injects the stimulus, simulator generates behavior, harness evaluates approved outcomes, recorder persists observations, and the visualizer exposes them. Compare alarm and pump-off command timing against the same criteria. The model separates reproducible execution from agent judgment. See ARCHITECTURE.md for the source comparison.",
+      "authority": "Govi direction as recorded in APP-001; C04 is an architect proposal; C05 records inherited source inspection",
+      "evidence_refs": [
+        "E01"
+      ],
+      "next_action": "Resolve referenced open issues before implementation"
+    },
+    {
+      "id": "C05",
+      "status": "accepted",
+      "evolution": "REA's skill guides a host agent that selects probes. MCP and CLI invoke the local runtime and return evidence. [REA skill](https://github.com/morluto/rea/blob/main/.agents/skills/reverse-engineer-anything/SKILL.md) · [Launcher](https://github.com/morluto/rea/blob/main/scripts/rea.mjs)\n\nCraft Anything also has a skill/MCP investigation path. Its desktop/CLI rebuild path runs Study → Build → Check with bounded refinement, delegates building to a coding agent, and persists state and human requests. Consider it for a browser panel build. Functional pass criteria still come from our harness. [Skill](https://github.com/storytold/craft-anything/blob/main/crates/setup/src/skill.md) · [Rebuild](https://github.com/storytold/craft-anything/blob/main/crates/ai/src/rebuild/mod.rs)\n\nBoth reviews were by source inspection. Live execution of the tools and dialysis integration were unverified.",
+      "position": "REA's skill guides a host agent that selects probes. MCP and CLI invoke the local runtime and return evidence. [REA skill](https://github.com/morluto/rea/blob/main/.agents/skills/reverse-engineer-anything/SKILL.md) · [Launcher](https://github.com/morluto/rea/blob/main/scripts/rea.mjs)\n\nCraft Anything also has a skill/MCP investigation path. Its desktop/CLI rebuild path runs Study → Build → Check with bounded refinement, delegates building to a coding agent, and persists state and human requests. Consider it for a browser panel build. Functional pass criteria still come from our harness. [Skill](https://github.com/storytold/craft-anything/blob/main/crates/setup/src/skill.md) · [Rebuild](https://github.com/storytold/craft-anything/blob/main/crates/ai/src/rebuild/mod.rs)\n\nBoth reviews were by source inspection. Live execution of the tools and dialysis integration were unverified.",
+      "authority": "Govi direction as recorded in APP-001; C04 is an architect proposal; C05 records inherited source inspection",
+      "evidence_refs": [
+        "E01"
+      ],
+      "next_action": "Resolve referenced open issues before implementation"
+    },
+    {
+      "id": "C06",
+      "status": "accepted",
+      "evolution": "APP was discussed as Agent Portability Protocol. Earlier architecture paired a durable GitHub diary with a local Context Package and a bootstrap/recovery service. Govi clarified that this experiment should manually carry the architect across surfaces and later explore GitHub communication. He requested concept-level court-note-style records, project memory, actions, evidence references and behavioral guidance. He selected Dhriti as the portable name. Runtime APP integration is deferred. The first downstream task is to see whether Gemini can recover and amend this architecture faithfully, then pass it to a receiving architect.",
+      "position": "APP was discussed as Agent Portability Protocol. Earlier architecture paired a durable GitHub diary with a local Context Package and a bootstrap/recovery service. Govi clarified that this experiment should manually carry the architect across surfaces and later explore GitHub communication. He requested concept-level court-note-style records, project memory, actions, evidence references and behavioral guidance. He selected Dhriti as the portable name. Runtime APP integration is deferred. The first downstream task is to see whether Gemini can recover and amend this architecture faithfully, then pass it to a receiving architect.",
+      "authority": "Govi direction as recorded in APP-001; C04 is an architect proposal; C05 records inherited source inspection",
+      "evidence_refs": [
+        "E01"
+      ],
+      "next_action": "Resolve referenced open issues before implementation"
+    },
+    {
+      "id": "C07",
+      "status": "accepted",
+      "evolution": "Govi clarified that a sandbox is an instantiated breadboard-like environment with identity, typed ports, attached tools, retained experiment state and lifecycle controls. Multiple named instances preserve their own state and connect through declared interfaces. A shared harness was proposed.",
+      "position": "Govi clarified that a sandbox is an instantiated breadboard-like environment with identity, typed ports, attached tools, retained experiment state and lifecycle controls. Multiple named instances preserve their own state and connect through declared interfaces. A shared harness was proposed.",
+      "authority": "Govi direction in supplied conversation record",
+      "evidence_refs": [
+        "E03"
+      ],
+      "next_action": "Confirm lifecycle and port contract before coding."
+    },
+    {
+      "id": "C08",
+      "status": "accepted",
+      "evolution": "Specification work is an exploratory sandbox assembling use cases, architecture knowledge, research evidence and assumptions into a cohesive, testable specification. Entry and exit criteria qualify outputs; the agent chooses actions within the active focus.",
+      "position": "Specification work is an exploratory sandbox assembling use cases, architecture knowledge, research evidence and assumptions into a cohesive, testable specification. Entry and exit criteria qualify outputs; the agent chooses actions within the active focus.",
+      "authority": "Govi direction in supplied conversation record",
+      "evidence_refs": [
+        "E03"
+      ],
+      "next_action": "Define spec qualification checks and the smallest experiment."
+    },
+    {
+      "id": "C09",
+      "status": "accepted",
+      "evolution": "Model an ecosystem through product, environment/behavior and communication roles. Select replay, synthetic signals, mathematical models, emulation or real hardware per component and purpose. Candidate tools such as QEMU, SPICE, OpenModelica, Simulink and Gazebo require capability checks for the exact target. No i.MX board support has been established.",
+      "position": "Model an ecosystem through product, environment/behavior and communication roles. Select replay, synthetic signals, mathematical models, emulation or real hardware per component and purpose. Candidate tools such as QEMU, SPICE, OpenModelica, Simulink and Gazebo require capability checks for the exact target. No i.MX board support has been established.",
+      "authority": "Govi direction in supplied conversation record",
+      "evidence_refs": [
+        "E03"
+      ],
+      "next_action": "Declare fidelity, signal ownership, timing and valid test conclusions for each assembly."
+    },
+    {
+      "id": "C10",
+      "status": "accepted",
+      "evolution": "Provide a common visual sandbox view with inputs left, outputs right, human/library references above and sources below. Show declared wiring and observed probe state, provenance and mismatch. Preserve native tool UIs for detailed inspection. Begin with one spec sandbox and then compose its qualified output with assembly.",
+      "position": "Provide a common visual sandbox view with inputs left, outputs right, human/library references above and sources below. Show declared wiring and observed probe state, provenance and mismatch. Preserve native tool UIs for detailed inspection. Begin with one spec sandbox and then compose its qualified output with assembly.",
+      "authority": "Govi direction in supplied conversation record",
+      "evidence_refs": [
+        "E03"
+      ],
+      "next_action": "Specify a small SVG-based view driven by actual state and probes."
+    },
+    {
+      "id": "C11",
+      "status": "proposed",
+      "evolution": "A local Python service and browser dashboard were proposed. Govi questioned web services at the pause point. Transport choice remains unresolved. A Windows-native lightweight wrapper between folders and heavyweight deployment is the goal.",
+      "position": "A local Python service and browser dashboard were proposed. Govi questioned web services at the pause point. Transport choice remains unresolved. A Windows-native lightweight wrapper between folders and heavyweight deployment is the goal.",
+      "authority": "Architect proposal awaiting design choice",
+      "evidence_refs": [
+        "E03"
+      ],
+      "next_action": "Resume Govi's web-interface concern before selecting REST, CLI, in-process or IPC."
+    },
+    {
+      "id": "C12",
+      "status": "accepted",
+      "evolution": "Govi requested reusable agent-persistent-protocol-skill and repository entry/exit updates for Dhriti. Use canonical versioned JSON with schema and validator, concept-level notes, parent lineage and attributed evidence. Keep client, harness and execution environment distinct. Runtime SIP/background awareness remains future work.",
+      "position": "Govi requested reusable agent-persistent-protocol-skill and repository entry/exit updates for Dhriti. Use canonical versioned JSON with schema and validator, concept-level notes, parent lineage and attributed evidence. Keep client, harness and execution environment distinct. Runtime SIP/background awareness remains future work.",
+      "authority": "Govi direction in supplied conversation record",
+      "evidence_refs": [
+        "E03"
+      ],
+      "next_action": "Run independent recovery on another harness using the saved repository."
+    },
+    {
+      "id": "C13",
+      "status": "proposed",
+      "evolution": "Second Brain was reviewed as a possible self-hosted memory/runtime component. APP's cross-host checkpoint contract remains the chosen development direction. Second Brain integration and native app automated handoffs have not been qualified.",
+      "position": "Second Brain was reviewed as a possible self-hosted memory/runtime component. APP's cross-host checkpoint contract remains the chosen development direction. Second Brain integration and native app automated handoffs have not been qualified.",
+      "authority": "Architect proposal awaiting design choice",
+      "evidence_refs": [
+        "E03"
+      ],
+      "next_action": "Evaluate only when a concrete APP host integration is needed."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E01",
+      "source": "repo:knowledge/archive/APP-001.txt",
+      "attribution": "ChatGPT origin session, migrated on 2026-11-18",
+      "verification": "inherited_report",
+      "claim": "Concepts and historical source inspections recovered from APP-001; no new simulator run"
+    },
+    {
+      "id": "E02",
+      "source": "repo:knowledge/archive/APP-002.md",
+      "attribution": "Gemini checkpoint supplied by Govi",
+      "verification": "inherited_report",
+      "claim": "Recovered C01 and C03; next action proposes runner/injector/harness boundary definition. Listed reviews originate in APP-001."
+    },
+    {
+      "id": "E03",
+      "source": "repo:knowledge/2026-11-18-discussion.md",
+      "attribution": "Available conversation record through the current user request",
+      "verification": "current_inspection",
+      "claim": "Reconstructed current design direction and open transport question; implementation and hardware capabilities remain untested"
+    }
+  ],
+  "open_questions": [
+    "Which dialysis specification revision and timing criteria anchor Stage Zero?",
+    "What concern about web services should determine the lightweight harness transport?",
+    "What exact component and interface should the first spec sandbox qualify?"
+  ],
+  "presence": {
+    "visit_id": "dhriti-20261118-context-bootstrap",
+    "harness": "ChatGPT Work / Codex",
+    "client": "Android per supplied session metadata",
+    "execution_environment": "hosted Linux workspace; no direct visibility into user PC",
+    "capabilities": [
+      "GitHub connector read/write",
+      "Python local validation",
+      "personal skill creation"
+    ]
+  },
+  "source_coverage": [
+    "Lossless original APP-001 attachment; timestamp precision was date-only, midnight is a normalization",
+    "Concept-level reconstruction of available conversation through 2026-11-18; not a verbatim complete transcript"
+  ],
+  "limitations": [
+    "Source reviews and earlier pilot runs are inherited reports",
+    "Legacy timestamps normalized from date-only records",
+    "No simulator source, hardware probe or new simulator run inspected this session",
+    "Cross-host independent recovery remains pending"
+  ]
+}

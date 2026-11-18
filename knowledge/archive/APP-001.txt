@@ -1,0 +1,131 @@
+Dhriti APP context attachment — APP-001 revision 0.1
+
+The following named sections contain the context records referenced by the startup prompt. The optional sandbox concept package contains the architecture diagrams.
+
+SOURCE SECTION: CHECKPOINT.md
+
+# APP-001@0.1 · Origin checkpoint
+
+**Identity** Dhriti, COP Spec-to-Simulator Architect  
+**Surface** ChatGPT · **Date** 12 November 2026 · **Owner** Govi  
+**Parent** Origin of the concept-based handoff. An earlier generic Spec-to-Simulator ZIP was prepared in the same conversation.  
+**Destination** Gemini mobile, then a GitHub project architect
+
+**Current task.** Validate manual architect continuity. Resume discussion of the Spec-to-Simulator Design Sandbox with Govi and return a reviewable amendment if the design changes.
+
+**Recover these facts.** The playbook chooses steps based on the current ask and evidence. Stage Zero uses the existing dialysis spec and harness to replay a baseline and a variation. Research Loop, REA and Craft Anything have conditional roles. APP is the mechanism being trialed for manual context portability. C01–C06 describe how those decisions evolved.
+
+**Actions recorded.** Discussed the lifecycle and visualizer, inspected REA and Craft Anything source, verified Gemini mobile loading guidance, and recovered the original COP Design Sandbox v0.1 image and reviewed the controlled replay rationale from the ASA blueprint. The new figure is an architecture synthesis. No new simulator run was performed.
+
+**Self-check for each receiver.** Report the files read, identity and actual authoring surface. Explain the distinction between a playbook and a runner, the use of the earlier sandbox roles, the baseline experiment, and the current status of source inspections versus live trials. Name one pending design decision and reference the relevant concept. Govi can compare this response across surfaces before authorizing a baseline amendment.
+
+**Next action.** Ask for the design question Govi wants to explore in Gemini, or begin by reviewing which earlier sandbox boundaries should be retained in the final design. Record proposed changes by concept and return a new checkpoint with this revision as its parent.
+
+
+---
+
+SOURCE SECTION: CONCEPTS.md
+
+# Concept records
+
+## C01 · Representative spec and evidence · Accepted direction · feeds C02
+
+The task starts with a product or company and a test objective. If the specification is incomplete, the Research Loop finds target and comparable product material and records source-linked findings in its Obsidian-compatible vault. REA is available for a scoped question when an authorized compatible artifact exists. Evidence about the target, analogous behavior, and demo assumptions retain their attribution. A reviewed representative spec supplies requirement IDs and expected outcomes. Exact source and confidence for a timing or behavior claim remain reviewable in the RTM.
+
+Earlier pilot discussions reported a manually extracted dialysis spec, a runnable simulator, and backend tests. The current packet has no raw run evidence. A complete spec lets an experiment start directly from the scenario. The open question is which exact pilot revision and timing criteria will anchor Stage Zero.
+
+## C02 · Assembly and feasibility · Accepted direction · uses C01, evaluated by C04
+
+The initial lifecycle discussion was framed as assembly-driven SDLC. Choose demo fidelity and plan what to reuse, adapt, mock or build. Feasibility should reflect issues back to the source: evidence gaps go to research, behavior ambiguity to the spec, and component gaps to the assembly plan. Carry the requirement, test, observations and verdict through the RTM. A mock can provide the zero-flow stimulus. The tested response must execute in the simulator and be observable. Pattern A was discussed as propagation and Pattern B as guided selection. Exact integration remains open. Knowledge Hub/Git vault connection and a reusable pattern library are later capabilities.
+
+## C03 · Playbook and human-operated sandbox · Accepted direction · drives C02 and C04
+
+The initial proposal used an orchestrator and state machine. Govi reframed the sandbox as a capability an agent uses on behalf of the human, like a calculator. The playbook records available actions and when they apply. The agent chooses actions from the current state. The runner carries out bounded operations and saves results. Govi controls scope and changes to acceptance criteria.
+
+The long-term visualizer is an editable design-and-try workspace. Human and agent can inspect or change the same assembly, run scenarios and compare traces. A future device panel or mobile app communicates with the simulator through commands, state, and events. The Stage Zero proposal uses the existing simulator/harness, a local runner, one saved baseline and a five-second variation. The editable visualizer and panel are later proof points.
+
+## C04 · Evaluation and provenance · Proposed adaptation · draws on C02 and C03
+
+The earlier Design Sandbox depicts scenario, target, independent oracle, evidence recorder, and Observatory. Carry those responsibilities into Spec-to-Simulator: scenario injects the stimulus, simulator generates behavior, harness evaluates approved outcomes, recorder persists observations, and the visualizer exposes them. Compare alarm and pump-off command timing against the same criteria. The model separates reproducible execution from agent judgment. See ARCHITECTURE.md for the source comparison.
+
+## C05 · Tool execution patterns · Source inspected · supports C01 and C03
+
+REA's skill guides a host agent that selects probes. MCP and CLI invoke the local runtime and return evidence. [REA skill](https://github.com/morluto/rea/blob/main/.agents/skills/reverse-engineer-anything/SKILL.md) · [Launcher](https://github.com/morluto/rea/blob/main/scripts/rea.mjs)
+
+Craft Anything also has a skill/MCP investigation path. Its desktop/CLI rebuild path runs Study → Build → Check with bounded refinement, delegates building to a coding agent, and persists state and human requests. Consider it for a browser panel build. Functional pass criteria still come from our harness. [Skill](https://github.com/storytold/craft-anything/blob/main/crates/setup/src/skill.md) · [Rebuild](https://github.com/storytold/craft-anything/blob/main/crates/ai/src/rebuild/mod.rs)
+
+Both reviews were by source inspection. Live execution of the tools and dialysis integration were unverified.
+
+## C06 · Agent continuity · Accepted direction · carries C01–C05
+
+APP was discussed as Agent Portability Protocol. Earlier architecture paired a durable GitHub diary with a local Context Package and a bootstrap/recovery service. Govi clarified that this experiment should manually carry the architect across surfaces and later explore GitHub communication. He requested concept-level court-note-style records, project memory, actions, evidence references and behavioral guidance. He selected Dhriti as the portable name. Runtime APP integration is deferred. The first downstream task is to see whether Gemini can recover and amend this architecture faithfully, then pass it to a receiving architect.
+
+
+---
+
+SOURCE SECTION: PROTOCOL.md
+
+# Manual APP context packet format · draft 0.1
+
+The unit of transfer is a **concept record**. A record can consolidate a discussion that returned across many turns or threads. Preserve consequential reversals and their reasons in the same record. Keep chronology inside a concept when it explains why the current position exists.
+
+## Packet header
+
+| Field | Meaning |
+|---|---|
+| Format version | Rules used to interpret this packet |
+| Packet ID and revision | Stable ID plus immutable revision |
+| Parent | Packet and revision inherited by this handoff |
+| Architect identity | Portable role name, here Dhriti |
+| Authoring surface and date | Where and when this checkpoint was authored |
+| Owner and destination | Decision authority and intended receiving surface |
+| Mission and current focus | Durable objective and active work |
+| Source coverage | What conversation, memory, and artifacts were available |
+| Entry point | Files required to recover the current task |
+
+## Concept header and body
+
+1. **ID, title, status, relations.** Status can be Accepted direction, Proposed, Open, or Superseded. Relations name other concept IDs and explain the dependency.
+2. **Question and stakes.** Describe what needed deciding.
+3. **Evolution.** Condense the positions, corrections, and why the direction changed. Add dates or source anchors where known.
+4. **Current position and authority.** Identify accepted decisions and distinguish architect proposals.
+5. **Evidence and actions.** Link artifacts and state what was inspected, executed, or reported by a prior session. Retain source attribution. Attach only what is necessary for recovery or verification.
+6. **Open issue and next action.** Say what remains uncertain and who decides or acts.
+
+## Transfer procedure
+
+Send the startup instructions and checkpoint first. Load concept records and evidence on demand. The receiver confirms what it read, reconstructs the current position, and flags contradictions or missing references. Save an amendment as a delta with parent revision, affected concept IDs, rationale, evidence, status and acceptance authority. Keep prior revisions in Git. For any unaccepted difference, preserve both the inherited decision and the proposal.
+
+A role profile carries mission, behavior, decision authority, capabilities, and limits. Capability availability is checked at the receiving surface. This draft records the transfer manually and can later be evaluated as a Git-based communication protocol.
+
+
+---
+
+SOURCE SECTION: PLAYBOOK_PROFILE.md
+
+# Spec-to-Simulator playbook profile · proposed
+
+The skill is the entry point. The profile tells Dhriti which actions apply at the current stage, what evidence permits a transition, and when the product owner must decide. The runner validates and executes selected operations. The project checkpoint records active stage, goal, accepted revisions, pending action, available tools, and last transition reason.
+
+| Active stage | Advance when | Return when |
+|---|---|---|
+| Evidence and scope | The test objective and source basis for the intended behavior are explicit | A specific finding is missing or contradicted |
+| Representative spec | The scenario has a versioned requirement, expected behavior, and recorded assumptions | New evidence challenges the expected behavior |
+| Feasibility and assembly | One scenario can be exercised and observed with the proposed assembly | A component or interface fails, or the spec cannot support a test |
+| Execute and evaluate | Inputs, runtime versions, observations, and verdict are recorded | Execution failure needs an assembly change, or a verdict exposes a criteria ambiguity |
+| Review and handoff | The comparison and next action are linked to the checkpoint | Govi requests a new variation or reopens a specific decision |
+
+Enter at the earliest stage with an unmet prerequisite for the current ask. With a usable baseline, a rerun can enter at Execute and evaluate. Focus on one active stage. Advance automatically within approved scope when its exit evidence is present. A return records the gap, target stage, affected artifacts, and the point at which to resume. Keep completed evidence available and revisit only what the change affects. A failed assertion remains a valid result and does not itself reopen the spec.
+
+Ask Govi when selecting an unsupported assumption as an expected behavior, changing scope or accepted criteria, resolving an authority conflict, or taking an action that requires user permission. Save the pending question and resume point. Ordinary probing, replay, and comparison can proceed within approved scope. A tool unavailable on the current surface is recorded as unavailable; route around it if another eligible path exists.
+
+## Tool entry
+
+- Research Loop — find and organize source-linked evidence.
+- REA — inspect a compatible authorized artifact for a specific behavior gap.
+- Craft Anything — optional coding-agent build/check aid for a candidate panel.
+- Knowledge Hub — later connector for prior evidence in Git-backed knowledge.
+- Pattern library — retrieve versioned patterns and their applicability.
+- Visualizer — later human-facing workspace for assembly and run controls, using the same saved state and operations as the skill.
+
+Example: a five-second no-flow timing variation starts at Execute and evaluate. If the simulator reports the expected alarm and the display does not, reopen the panel integration in feasibility and assembly. If the expected reset behavior is itself unclear, return to the spec and ask Govi only if the evidence leaves a material choice.
