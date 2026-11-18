@@ -3,7 +3,7 @@
   "repository": "GovindarajD/dhriti-architect-spec-to-simu",
   "agent_id": "dhriti",
   "role": "identity/Dhriti_System_Prompt.md",
-  "current_checkpoint": "focus/checkpoints/APP-003-0.1.json",
+  "current_checkpoint": "focus/checkpoints/APP-004-0.1.json",
   "skill": "https://github.com/GovindarajD/agent-persistent-memory/tree/a3f80b7a0d87f8f73a5c698b00ecf3bc760ccb6b/skills/agent-persistent-protocol-skill",
   "qualification": "schema validation and local recovery checks; independent host recovery pending",
   "protocol_commit": "a3f80b7a0d87f8f73a5c698b00ecf3bc760ccb6b"
