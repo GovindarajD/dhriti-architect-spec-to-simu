@@ -1,13 +1,15 @@
 {
   "visit_id": "dhriti-20261118-context-bootstrap",
   "agent_id": "dhriti",
-  "status": "open",
+  "status": "closed",
   "entry_recorded_at": "2026-11-18T03:21:48.085Z",
   "entry_note": "Bootstrap visit recorded after initial repository inspection; exact conversation entry time unavailable",
   "loaded_checkpoint": "APP-002@0.1 (legacy import)",
   "harness": "ChatGPT Work / Codex",
   "client": "Android per supplied metadata",
   "execution_environment": "hosted Linux workspace",
-  "checkpoint_left": null,
-  "outcome": "Publishing normalized context and reusable protocol"
+  "checkpoint_left": "APP-003@0.1",
+  "outcome": "Saved checkpoint chain and protocol; local fresh-agent recovery passed, live independent host trial pending",
+  "exit_at": "2026-11-18T03:22:29.179Z",
+  "published_checkpoint_commit": "4a0faf4a91e6f084aa830fa2fe460e632b4e8dbb"
 }
