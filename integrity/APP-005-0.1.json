@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "repository": "GovindarajD/dhriti-architect-spec-to-simu",
+  "agent_id": "dhriti",
+  "checkpoint_id": "APP-005@0.1",
+  "created_at": "2026-11-20T03:15:29.294623Z",
+  "manifest_sha256": "aa3a2792696a71d2e18d8c563db142b118658da59a3c0b29c0814cb401ad1f5c",
+  "files": {
+    "experiments/PHASE_ONE_QUALIFICATION.md": "b7407a92bcba540b91003eb15cf2e0556a81431b7b79d18b22fb7f940866d44d",
+    "focus/checkpoints/APP-001-0.1.json": "f608315c2ccd690dffa9b70acc8c8fcf884f2713ac84e1c3614aaacd4f8437cc",
+    "focus/checkpoints/APP-002-0.1.json": "2b0592b4517c2c3600b22f3492967803661ea4d6ab2259061e9342d4b560d2d2",
+    "focus/checkpoints/APP-003-0.1.json": "0dc201bd0fc4d92db91fd36a8a95f5e4f2e2d58240c9441a133250dd31f2c972",
+    "focus/checkpoints/APP-004-0.1.json": "febe90c8be1a5965d6f74a6f48464be3a1e6754c44741db72bc3549c13b7b968",
+    "focus/checkpoints/APP-005-0.1.json": "4c8f7c06e59bc2a2c88b26206a0bce6e327b899d3dc1e8b923a7ec8c7f43c26b",
+    "identity/Dhriti_System_Prompt.md": "a71433225f2e89f7269eb918dedd59afcf540934c3c9f2ab3aef95d7db45addc",
+    "knowledge/2026-11-18-discussion.md": "2e2f91e04bd4dcecd83842febd857178959fa1765ac940c0bb6d348c716e765b",
+    "knowledge/archive/APP-001.txt": "203f60e4718f0ea593885d63de038838a9622064166529b493a49982f65257e3",
+    "knowledge/archive/APP-002.md": "9beed2ddc3f6f2983e99478a12165cdbdf8642debbb026eef7de3fc348aa525a",
+    "knowledge/handoff-2026-11-18.md": "8f0f45ccd9448a4b7cf3dd27c3687be6b1bf0bf70ba7b2eb8be597b667c93469",
+    "knowledge/persistence-phase-one-2026-11-20.md": "998f9a0fcd5fb162052fb0efea7ecb94c7d3a4cf8dabca4252656a839e5c1bd8"
+  }
+}

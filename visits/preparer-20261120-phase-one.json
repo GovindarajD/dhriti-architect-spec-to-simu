@@ -1,0 +1,16 @@
+{
+  "visit_id": "preparer-20261120-phase-one",
+  "agent_subject": "dhriti",
+  "author": "current ChatGPT context-preparing assistant, not Dhriti",
+  "status": "checkpoint_prepared",
+  "created_at": "2026-11-20T03:15:29.427213Z",
+  "loaded_checkpoint": "APP-004@0.1",
+  "checkpoint_left": "APP-005@0.1",
+  "harness": "ChatGPT Work / Codex",
+  "capabilities": [
+    "GitHub connector write verified on protocol repository",
+    "Python local validation"
+  ],
+  "qualification": "local tests pass; native-host qualification pending",
+  "publication": "This record is published atomically with APP-005; publication verified by preparer after commit. No fabricated entry/exit timestamps."
+}

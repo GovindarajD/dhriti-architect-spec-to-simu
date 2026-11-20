@@ -1,7 +1,11 @@
 # Dhriti architect memory
 
-Start with AGENTS.md and manifests/app.json. The manifest locates Dhriti's role and latest canonical JSON checkpoint. Load the reusable agent-persistent-protocol-skill from GovindarajD/agent-persistent-memory. Read relevant concepts on demand.
+Start with AGENTS.md and manifests/app.json at the current remote commit. Use the installed agent-persistent-protocol-skill version 0.2.0; normal operation needs no access to the protocol source repository. The manifest locates Dhriti's identity, current JSON checkpoint and integrity inventory. Load task-relevant concepts and source evidence; report omissions and qualification gaps.
 
-APP-001 and APP-002 are preserved verbatim under knowledge/archive and normalized into full JSON checkpoints. APP-003 captures the available discussion through 18 November 2026. It preserves proposals and unresolved choices. Each conversation records entry and exit, subject to the host's loaded instructions and authorized repository access. Sudden termination can leave an open visit.
+APP-001 through APP-004 remain unchanged. APP-005 records the current phase-one persistence direction and locally executed tests. Protocol 0.2.0 intentionally retains checkpoint schema 0.1.0.
 
-The context covers architecture, tools, multi-simulator composition, visual probes and current open interface choices. Simulator source, original diagram bytes and raw test evidence have not been imported.
+See [VS Code plan](procedures/VS_CODE_PHASE_ONE_PLAN.md), [qualification evidence](experiments/PHASE_ONE_QUALIFICATION.md) and [generated memory view](views/obsidian/Home.md). The view can be opened as an Obsidian vault; edits do not automatically update canonical records. SQLite and stronger security controls are later work.
+
+The phase-one package supports blank creation, distinct seeded/delegated creation and existing-agent resume. Native host invocation, compaction recovery and cross-host round trips remain PENDING. The preparer remains distinct from Dhriti.
+
+Original archives remain under knowledge/archive. Simulator source, original diagram bytes and raw simulator test evidence have not been imported.
