@@ -22,5 +22,8 @@ Visualizer is the visual access/control plane, NOT the engineering workspace. La
 ## APP publication boundary
 This intake and the linked STAGED briefing are NOT listed in APP-005's manifest/integrity and are NOT canonical APP memory. On Govi's explicit instruction, Dhriti should use the installed APP skill to ingest with provenance and publish a validated immutable child checkpoint plus manifest and integrity inventory atomically with stale-head protection, followed by remote readback. If tools or host qualification are unavailable, report PENDING/BLOCKED and retain the source; never claim publication or perfect memory.
 
+## Reverse-briefing acceptance gate
+Before declaring Visualizer context understood, follow [Visualizer self-check](visualizer-self-check.md). Teach back the architecture in your own words, classify all 12 coverage topics with source references, answer the scenario probes, and raise material gaps to Govi. This is an architect comprehension gate, not a substitute for APP validation or Codex implementation evidence. Do not claim complete understanding or implementation readiness from reading alone.
+
 ## First response after ingestion request
 Report (a) pinned identity/home/checkpoint, (b) loaded and omitted source IDs, (c) Visualizer assignment summary and retained Spec-to-Simulator scope, (d) APP publication status, and (e) next evidence request to Codex. Do not treat successful cloning as proof of full APP host qualification.
