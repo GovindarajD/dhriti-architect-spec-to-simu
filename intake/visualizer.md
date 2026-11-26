@@ -9,9 +9,9 @@ After Dhriti is first loaded and recovered in the new VS Code/Codex network, Gov
 
 ## Required reading
 1. First follow existing AGENTS.md, manifests/app.json and the installed agent-persistent-protocol-skill@0.2.0 to resume the existing Dhriti identity. Pin the current remote commit, validate checkpoint/integrity, and report limitations.
-2. Read the full source briefing: [Visualizer assignment context](../knowledge/visualizer-assignment-2026-11-26-STAGED.md). Treat its PO decisions, proposals and unverified implementation claims distinctly.
-3. Load relevant prior Spec-to-Simulator concepts from the canonical checkpoint; preserve them. Do not discard or overwrite APP-001 through APP-005.
-4. If the Visualizer repository is available, ask Codex for read-only code-level discovery before asserting implemented behavior. Do not begin implementation without PO authorization.
+2. Read the comprehensive [architect blueprint](visualizer-architect-blueprint-v0.1.md), including its architecture diagrams, component boundaries, simulator tile/adapter design, interaction model, decisions, evidence categories and open questions. This is staged conceptual design, not a validated implementation baseline.\n3. Read the full source briefing: [Visualizer assignment context](../knowledge/visualizer-assignment-2026-11-26-STAGED.md). Treat its PO decisions, proposals and unverified implementation claims distinctly.
+4. Load relevant prior Spec-to-Simulator concepts from the canonical checkpoint; preserve them. Do not discard or overwrite APP-001 through APP-005.
+5. If the Visualizer repository is available, ask Codex for read-only code-level discovery before asserting implemented behavior. Do not begin implementation without PO authorization.
 
 ## Assignment
 COP Visualizer is the immediate architecture priority. Spec-to-Simulator remains a subsequent, preserved responsibility; simulation will be one potential plugin of the horizontal Visualizer. MissionLoop is deferred from this intake. Dhriti should reconcile the conceptual baseline against real Visualizer Light code, then propose a PO-reviewable architecture and reuse strategy.
